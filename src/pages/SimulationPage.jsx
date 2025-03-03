@@ -20,7 +20,7 @@ function SimulationPage() {
   const wsRef = useRef(null);
 
   useEffect(() => {
-    wsRef.current = new WebSocket('ws://localhost:8080/ws/simulation');
+    wsRef.current = new WebSocket('ws://back-testci.onrender.com:8080/ws/simulation');
     wsRef.current.onopen = () => console.log("WS Open");
     wsRef.current.onmessage = (e) => console.log("Message:", e.data);
     wsRef.current.onerror = (err) => console.error("WS Error:", err);
