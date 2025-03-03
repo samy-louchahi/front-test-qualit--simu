@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // Adapte la baseURL si nécessaire (ex: http://localhost:8080, etc.)
 const API = axios.create({
-  baseURL: 'http://localhost:8080'
+  baseURL: 'https://back-testci.onrender.com:8080'
 });
 
 /* ------------------ ASTRE RESOURCE (/astres) ------------------ */
