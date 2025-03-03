@@ -1,0 +1,124 @@
+/* --- Reset basique --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* --- Fond sombre + police simple --- */
+  body {
+    background-color: #202225;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.4;
+  }
+  
+  /* --- Titres --- */
+  h1, h2, h3, h4, h5 {
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  /* --- Liens (si besoin) --- */
+  a {
+    color: #58a6ff;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* --- Boutons génériques --- */
+  button {
+    background-color: #5865f2; /* style "Discord-like" par ex. */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0.25rem;
+    transition: background-color 0.2s;
+  }
+  button:hover {
+    background-color: #4e57d7;
+  }
+  button:focus {
+    outline: none;
+  }
+  button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  /* --- Conteneur principal (optionnel) --- */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* --- Boîtes génériques --- */
+  .box {
+    background-color: #2f3136;
+    border: 1px solid #484b51;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* --- EspaceView container --- */
+  .espaceView-container {
+    position: relative;
+    border: 1px solid #484b51;
+    background-color: #2f3136;
+    overflow: hidden; /* masquera d'éventuels débordements */
+  }
+  .espaceView-title {
+    margin: 0.5rem;
+    color: #fefefe;
+    font-weight: bold;
+  }
+  
+  /* --- Menu (Système, Ajouter...) --- */
+  .menu {
+    background-color: #2f3136;
+    border: 1px solid #484b51;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .menu h4 {
+    color: #fff;
+  }
+  
+  /* --- OptionView (overlay) --- */
+  .option-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .option-content {
+    background-color: #36393f;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    min-width: 300px;
+  }
+  
+  /* --- Petites classes utilitaires --- */
+  .mt-1 { margin-top: 1rem !important; }
+  .mb-1 { margin-bottom: 1rem !important; }
+  .flex {
+    display: flex;
+    gap: 1rem;
+  }
+  .flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
