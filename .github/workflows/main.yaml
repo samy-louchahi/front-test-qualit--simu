@@ -24,8 +24,8 @@ jobs:
 
       # Construire l'image Docker pour le front-end React
       - name: Build Docker image for React app
-        run: docker build -f docker/Dockerfile.react -t alexischartier/react-frontend:latest .
+        run: docker build -f docker/Dockerfile.react -t alexischartier/front-test-quali--simu:latest .
 
-      # Pousser l'image Docker sur Docker Hub
+      # Pousser l'image Docker sur Docker Hub z
       - name: Push Docker image
-        run: docker push alexischartier/react-frontend:latest
+        run: docker push alexischartier/front-test-quali--simu:latest
